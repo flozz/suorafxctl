@@ -239,29 +239,29 @@ def main(args=sys.argv[1:]):
     cli = build_cli()
     settings = cli.parse_args(args)
 
-    sudorafx = SuoraFX()
+    suorafx = SuoraFX()
 
-    sudorafx.read_config()
-    sudorafx.acquire()
+    suorafx.read_config()
+    suorafx.acquire()
 
     if settings.reset:
-        sudorafx.effect = SuoraFX.DEFAULT_CONFIG["effect"]
-        sudorafx.speed = SuoraFX.DEFAULT_CONFIG["speed"]
-        sudorafx.brightness = SuoraFX.DEFAULT_CONFIG["brightness"]
-        sudorafx.color = SuoraFX.DEFAULT_CONFIG["color"]
+        suorafx.effect = SuoraFX.DEFAULT_CONFIG["effect"]
+        suorafx.speed = SuoraFX.DEFAULT_CONFIG["speed"]
+        suorafx.brightness = SuoraFX.DEFAULT_CONFIG["brightness"]
+        suorafx.color = SuoraFX.DEFAULT_CONFIG["color"]
     else:
         if settings.effect is not None:
-            sudorafx.effect = settings.effect
+            suorafx.effect = settings.effect
         if settings.speed is not None:
-            sudorafx.speed = settings.speed
+            suorafx.speed = settings.speed
         if settings.brightness is not None:
-            sudorafx.brightness = settings.brightness
+            suorafx.brightness = settings.brightness
         if settings.color is not None:
-            sudorafx.color = settings.color
+            suorafx.color = settings.color
 
-    sudorafx.commit()
-    sudorafx.release()
-    sudorafx.write_config()
+    suorafx.commit()
+    suorafx.write_config()
+    suorafx.release()
 
 
 if __name__ == "__main__":
