@@ -187,7 +187,7 @@ class SuoraFX(object):
 def build_cli():
     cli = argparse.ArgumentParser(
         epilog="The first call to this command will reset all unspecified "
-        "settings to their default values"
+        "settings to their default value"
     )
 
     cli.add_argument(
@@ -210,7 +210,7 @@ def build_cli():
     cli.add_argument(
         "-b",
         "--brightness",
-        help="keyboard brightness, from 0 (ligth off) to 50",
+        help="keyboard brightness, from 0 (light off) to 50",
         metavar="0-50",
         type=int,
         choices=range(0, 51),
