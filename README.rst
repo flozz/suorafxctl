@@ -66,4 +66,4 @@ And finally unplug / replug the keyboard to the computer.
 Changelog
 ---------
 
-TODO
+* **v1.0.0:** Initial release
