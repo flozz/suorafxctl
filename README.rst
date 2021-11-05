@@ -1,11 +1,13 @@
 Suorafxctl - Configure Roccat Suora FX keyboards on Linux
 =========================================================
 
-Suorafxctl is a small CLI tool and Python library to configure Roccat Suora FX gaming keyboards on Linux. Only supports most simple settings, such as predefined lighting effects, brightness, effect speed and basic effect colors, are supported.
+|Github| |Discord| |PYPI Version| |Github Actions| |Black| |License|
+
+Suorafxctl is a small CLI tool and Python library to configure Roccat Suora FX gaming keyboards on Linux. Only most simple settings, such as predefined lighting effects, brightness, effect speed and basic effect colors, are supported.
 
 
-Usage
------
+Usage (CLI)
+-----------
 
 ::
 
@@ -26,6 +28,31 @@ Usage
       -r, --reset           reset all settings to their default
 
     The first call to this command will reset all unspecified settings to their default value
+
+
+Usage (Python Library)
+----------------------
+
+.. code-block:: Python
+
+    from suorafxctl import SuoraFX
+
+    suorafx = SuoraFX()
+
+    # Get control of the USB device
+    suorafx.acquire()
+
+    # Set some configs
+    suorafx.effect = "wave-right"
+    suorafx.speed = 1
+    suorafx.brightness = 50
+    suorafx.color = "red"
+
+    # Send configs to the device
+    suorafx.commit()
+
+    # Return the control of the USB device to the Linux Kernel
+    suorafx.release()
 
 
 Installing suorafxctl from sources
@@ -67,3 +94,21 @@ Changelog
 ---------
 
 * **v1.0.0:** Initial release
+
+.. |Github| image:: https://img.shields.io/github/stars/flozz/suorafxctl?label=Github&logo=github
+   :target: https://github.com/flozz/suorafxctl
+
+.. |Discord| image:: https://img.shields.io/badge/chat-Discord-8c9eff?logo=discord&logoColor=ffffff
+   :target: https://discord.gg/P77sWhuSs4
+
+.. |PYPI Version| image:: https://img.shields.io/pypi/v/suorafxctl?logo=python&logoColor=f1f1f1
+   :target: https://pypi.org/project/suorafxctl/
+
+.. |Github Actions| image:: https://img.shields.io/github/workflow/status/flozz/suorafxctl/Lint%20and%20Tests/master
+   :target: https://github.com/flozz/suorafxctl/actions
+
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://black.readthedocs.io/en/stable/
+
+.. |License| image:: https://img.shields.io/github/license/flozz/suorafxctl
+   :target: https://github.com/flozz/suorafxctl/blob/master/LICENSE
