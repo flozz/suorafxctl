@@ -201,7 +201,7 @@ def build_cli():
     cli.add_argument(
         "-s",
         "--speed",
-        help="Illumination effect speed, from 0 (speed) to 10 (slow)",
+        help="Illumination effect speed, from 0 (fast) to 10 (slow)",
         metavar="0-10",
         type=int,
         choices=range(0, 11),
