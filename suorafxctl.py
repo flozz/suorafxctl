@@ -20,7 +20,6 @@ def get_xdg_config_home():
 
 
 class SuoraFX(object):
-
     VENDOR_ID = 0x1E7D
     PRODUCT_ID = 0x3246
     INTERFACE = 0x03
