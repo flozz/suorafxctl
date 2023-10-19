@@ -93,6 +93,11 @@ And finally unplug / replug the keyboard to the computer.
 Changelog
 ---------
 
+* **[NEXT]** (changes on ``master``, but not released yet):
+
+  * chore: Added Python 3.11 and 3.12 support
+  * chore!: Removed Python 3.7 support
+
 * **v1.0.0:** Initial release
 
 .. |Github| image:: https://img.shields.io/github/stars/flozz/suorafxctl?label=Github&logo=github
