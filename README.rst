@@ -109,7 +109,7 @@ Changelog
 .. |PYPI Version| image:: https://img.shields.io/pypi/v/suorafxctl?logo=python&logoColor=f1f1f1
    :target: https://pypi.org/project/suorafxctl/
 
-.. |Github Actions| image:: https://img.shields.io/github/workflow/status/flozz/suorafxctl/Lint%20and%20Tests/master
+.. |Github Actions| image:: https://github.com/flozz/suorafxctl/actions/workflows/python-ci.yml/badge.svg
    :target: https://github.com/flozz/suorafxctl/actions
 
 .. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
