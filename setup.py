@@ -14,7 +14,7 @@ except Exception as error:
 
 setup(
     name="suorafxctl",
-    version="1.0.0",
+    version="1.0.1",
     description="Configure Roccat Suora FX keyboards on Linux",
     url="https://github.com/flozz/suorafxctl",
     license="WTFPL",
