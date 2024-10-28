@@ -95,12 +95,13 @@ Changelog
 
 * **[NEXT]** (changes on ``master``, but not released yet):
 
-  * Nothing yet :)
+  * misc: Added Python 3.13 support (@flozz)
+  * misc!: Removed Python 3.8 support (@flozz)
 
 * **v1.0.1:**
 
-  * chore: Added Python 3.11 and 3.12 support
-  * chore!: Removed Python 3.7 support
+  * misc: Added Python 3.11 and 3.12 support
+  * misc!: Removed Python 3.7 support
 
 * **v1.0.0:** Initial release
 
