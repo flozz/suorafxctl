@@ -1,6 +1,5 @@
 import nox
 
-
 PYTHON_FILES = [
     "setup.py",
     "suorafxctl.py",
